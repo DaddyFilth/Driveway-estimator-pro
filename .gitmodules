@@ -1,0 +1,6 @@
+[submodule "agent-client-protocol"]
+	path = agent-client-protocol
+	url = https://github.com/OWNER/agent-client-protocol.git
+[submodule "cubic"]
+	path = cubic
+	url = https://github.com/cubic-vm/cubic.git
