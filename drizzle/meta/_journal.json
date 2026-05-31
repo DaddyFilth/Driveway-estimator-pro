@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1777881750583,
+      "tag": "0000_solid_the_captain",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1777881870234,
+      "tag": "0001_sturdy_santa_claus",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1778067600000,
+      "tag": "0002_secure_password_auth",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1778540400000,
+      "tag": "0003_contractor_quote_pricing",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+services:
+  app:
+    image: easy-asphalt-app:debug
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: deps
+    environment:
+      NODE_ENV: development
+      HOST: 0.0.0.0
+      PORT: 3000
+      DATABASE_URL: ${DATABASE_URL:-}
+      JWT_SECRET: ${JWT_SECRET:-dev-secret}
+      VITE_APP_ID: ${VITE_APP_ID:-}
+      OWNER_EMAIL: ${OWNER_EMAIL:-}
+      BUILT_IN_FORGE_API_URL: ${BUILT_IN_FORGE_API_URL:-}
+      BUILT_IN_FORGE_API_KEY: ${BUILT_IN_FORGE_API_KEY:-}
+    ports:
+      - "3000:3000"
+    command: pnpm dev
+    volumes:
+      - .:/app
+      - /app/node_modules
